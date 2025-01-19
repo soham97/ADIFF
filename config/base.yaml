@@ -1,0 +1,29 @@
+data:
+    sampling_rate: 32000
+    segment_seconds: 10
+    tokenizer_type: 'gpt2'
+    ip_text_len: 40
+
+model:
+    encoder:
+      audioenc_name: 'HTSAT'
+      window_size: 1024
+      hop_size: 320
+      mel_bins: 64
+      fmin: 50
+      fmax: 8000
+      num_classes: 200
+      out_emb: 768
+      specaug: False
+      mixup: False
+      text_model: 'gpt2'
+      transformer_embed_dim:  768
+      d_proj: 1024
+    decoder:
+      text_decoder: 'gpt2'
+      prefix_length: 40
+      prefix_length_clip: 40
+      num_layers: 8
+      normalize_prefix: True
+      freeze_gpt_weights: False
+    model_type: ADiff
