@@ -82,7 +82,7 @@ The ACD and CLD dataset sources audio files from Clotho and AudioCaps dataset.  
 The audio files can be downloaded from their respective hosting website: [Clotho](https://zenodo.org/records/4783391) and [AudioCaps](https://github.com/cdjkim/audiocaps).
 
 ## Leaderboard
-| Model   | Decoding | CLD-1 BLEU_4 | CLD-1 SPICE | CLD-2 BLEU_4 | CLD-2 SPICE | CLD-3 BLEU_4 | CLD-3 SPICE | ACD-1 BLEU_4 | ACD-1 SPICE | ACD-2 BLEU_4 | ACD-2 SPICE | ACD-3 BLEU_4 | ACD-3 SPICE |
+| Model   | Decod. | CLD-1 <sub><sup>BLUE_4</sup></sub> | CLD-1 <sub><sup>SPICE</sup></sub> | CLD-2 <sub><sup>BLUE_4</sup></sub> | CLD-2 <sub><sup>SPICE</sup></sub> | CLD-3 <sub><sup>BLUE_4</sup></sub> | CLD-3 <sub><sup>SPICE</sup></sub> | ACD-1 <sub><sup>BLUE_4</sup></sub> | ACD-1 <sub><sup>SPICE</sup></sub> | ACD-2 <sub><sup>BLUE_4</sup></sub> | ACD-2 <sub><sup>SPICE</sup></sub> | ACD-3 <sub><sup>BLUE_4</sup></sub> | ACD-3 <sub><sup>SPICE</sup></sub> |
 |----------|------------|--------------|-------------|--------------|-------------|--------------|-------------|--------------|-------------|--------------|-------------|--------------|-------------|
 | [ADIFF](https://openreview.net/forum?id=l4fMj4Vnly)    | Greedy       | 15.25        | 11.85       | 24.50        | 23.15       | 17.08        | 16.67       | 14.76        | 12.68       | 23.43        | 22.16       | 16.91        | 17.07       |
 
