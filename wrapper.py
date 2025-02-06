@@ -189,7 +189,6 @@ class ADIFF():
             stop_token: str = ' <|endoftext|>',entry_count=1,top_p=0.8,):
         stop_token_index = self.tokenizer.encode(stop_token)[0]
         tokens = None
-        generated_num = 0
         generated_list = []
         filter_value = -float("Inf")
         device = next(self.model.parameters()).device
@@ -201,7 +200,7 @@ class ADIFF():
                     if tokens is None:
                         tokens = torch.tensor(self.tokenizer.encode(prompt))
                         tokens = tokens.unsqueeze(0).to(device)
-                    generated = model.gpt.transformer.wte(tokens)
+                    generated = self.model.gpt.transformer.wte(tokens)
 
             for i in tqdm(range(entry_length)):
                 outputs = self.model.caption_decoder.gpt(inputs_embeds=generated)

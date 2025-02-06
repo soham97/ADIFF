@@ -1,4 +1,5 @@
 # ADIFF: Explaining audio difference using natural language
+[[`Paper`](https://openreview.net/forum?id=l4fMj4Vnly)] [[`Checkpoint`](https://zenodo.org/records/14706090)]
 
 This repository hosts the Audio Difference Explanation datasets and ADIFF checkpoint. ADIFF is an audio prefix tuning-based language model with a cross-projection module and undergoes a three-step training process. ADIFF takes two audios and text prompt as input and produces different tiers of difference explanations as output. This involves identifying and describing audio events, acoustic scenes, signal characteristics, and their emotional impact on listeners.
 ![alt text](image.png)
@@ -13,12 +14,13 @@ conda activate adiff && \
 pip install -r requirements.txt
 ```
 
-2. Download ADIFF weights: [Pretrained Model \[Anonymous drive\]](https://drive.google.com/file/d/1yixBwQcrH-Z59aqeG_YBRf9XcBInIXmV/view?usp=sharing)
-3. Move the `adiff_base.pth` under `configs` folder
+2. Download ADIFF weights: [Pretrained Model \[Zenodo\]](https://zenodo.org/records/14706090)
+3. Move the `adiff_base.pth` under `config` folder
 
 ## Usage
 The wrapper class allows easy interaction with the model. To use the wrapper, inputs required are:
-- `config`: Choose between "base"
+- `config`: The option supported is "base"
+- `model_path`: Choose between adiff_base.ckpt or adiff_base_wavcaps.ckpt. The second checkpoint is trained on wavcaps difference along with ACD and CLD, can detect similarities between two audios, and has wider coverage of concepts. 
 - `examples`: List of examples. Each example is a list containing three entries: audiopath1, audiopath2, prompt
 
 Supported functions:
@@ -82,12 +84,11 @@ The audio files can be downloaded from their respective hosting website: [Clotho
 ## Citation
 ```
 @inproceedings{
-    anonymous2024adiff,
+    anonymous2025adiff,
     title={{ADIFF}: Explaining audio difference using natural language},
     author={Anonymous},
-    booktitle={Submitted to The Thirteenth International Conference on Learning Representations},
-    year={2024},
-    url={https://openreview.net/forum?id=l4fMj4Vnly},
-    note={under review}
+    booktitle={The Thirteenth International Conference on Learning Representations},
+    year={2025},
+    url={https://openreview.net/forum?id=l4fMj4Vnly}
 }
 ```

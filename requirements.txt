@@ -4,5 +4,6 @@ numpy==1.23.5
 PyYAML==6.0
 PyYAML==6.0
 torch==2.0.0
+torchaudio==2.0.1
 torchlibrosa==0.1.0
 transformers==4.28.1
