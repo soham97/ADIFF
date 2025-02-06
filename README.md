@@ -82,6 +82,7 @@ The ACD and CLD dataset sources audio files from Clotho and AudioCaps dataset.  
 The audio files can be downloaded from their respective hosting website: [Clotho](https://zenodo.org/records/4783391) and [AudioCaps](https://github.com/cdjkim/audiocaps).
 
 ## Leaderboard
+Please create a PR to add any model to the leaderboard
 | <sub><sup>Model</sup></sub>   | <sub><sup>Decoding</sup></sub> | <sub><sup>CLD-1 (SPICE)</sup></sub> | <sub><sup>CLD-2 (SPICE)</sup></sub> | <sub><sup>CLD-3 (SPICE)</sup></sub> | <sub><sup>ACD-1 (SPICE)</sup></sub> | <sub><sup>ACD-2 (SPICE)</sup></sub> | <sub><sup>ACD-3 (SPICE)</sup></sub> |
 |--|--|--|--|--|--|--|--|
 | [ADIFF](https://openreview.net/forum?id=l4fMj4Vnly)    | Greedy       | 11.85       | 23.15       | 16.67       | 12.68       | 22.16       | 17.07       |
