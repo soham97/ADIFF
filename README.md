@@ -90,9 +90,9 @@ Please create a PR to add any model to the leaderboard
 ## Citation
 ```
 @inproceedings{
-    anonymous2025adiff,
+    deshmukh2025adiff,
     title={{ADIFF}: Explaining audio difference using natural language},
-    author={Anonymous},
+    author={Soham Deshmukh and Shuo Han and Rita Singh and Bhiksha Raj},
     booktitle={The Thirteenth International Conference on Learning Representations},
     year={2025},
     url={https://openreview.net/forum?id=l4fMj4Vnly}
