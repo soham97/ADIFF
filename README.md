@@ -4,6 +4,9 @@
 This repository hosts the Audio Difference Explanation datasets and ADIFF checkpoint. ADIFF is an audio prefix tuning-based language model with a cross-projection module and undergoes a three-step training process. ADIFF takes two audios and text prompt as input and produces different tiers of difference explanations as output. This involves identifying and describing audio events, acoustic scenes, signal characteristics, and their emotional impact on listeners.
 ![alt text](image.png)
 
+## News
+[Feb 25] ADIFF is accepted at ICLR 2025 as Spotlight
+
 ## Setup
 1. Install the required dependencies: `pip install -r requirements.txt`. For [conda](https://www.anaconda.com), run the following: 
 
